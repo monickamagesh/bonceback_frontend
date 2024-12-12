@@ -7,7 +7,7 @@ const Patient = () => {
     <>
       <Navbar />
       <Sidebar />
-      <div>Patient main screen - madhu version</div>
+      <div>Patient main screen - monicka version</div>
     </>
   );
 };
