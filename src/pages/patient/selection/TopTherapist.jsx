@@ -16,7 +16,7 @@ import b6 from "../../../assets/therapist/b6.jpg"
 const TopTherapist = () => {
   const therapists = [
     {
-      name: "Dr. Kat Mach",
+      name: "Dr. Hira Nandhini",
       specialization: "Neurological Physical Therapist",
       rating: 4.0,
       image: g2,
@@ -31,7 +31,7 @@ const TopTherapist = () => {
       name: "Dr. Vignesh Prabhas",
       specialization: "Hand & Health Physical Therapist",
       rating: 4.0,
-      image: b2,
+      image: b4,
     },
     {
       name: "Dr. Diti V Jain",
@@ -55,7 +55,7 @@ const TopTherapist = () => {
       name: "Dr. John Peterson",
       specialization: "Lymphatic Physical Therapist",
       rating: 3.0,
-      image: b4,
+      image: b2,
     },
     {
       name: "Dr. Sonali Raikar",
@@ -76,7 +76,7 @@ const TopTherapist = () => {
       image: b5,
     },
     {
-      name: "Dr. Hira Nandhini",
+      name: "Dr. Kat Mach",
       specialization: "Women’s Health Physical Therapist",
       rating: 3.0,
       image: g1,

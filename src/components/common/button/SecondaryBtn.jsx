@@ -1,9 +1,11 @@
 import React from "react"
+import { Link } from "react-router-dom"
 export default function SecondaryBtn(props){
     return(
-        <div className='secondary_btn'>
+        <Link to="/login" className="secondary_btn">
+        
             <p className="material-symbols-outlined">{props.icon}</p>
             <p>{props.btntext}</p>
-      </div>
+      </Link>
     )
 }
