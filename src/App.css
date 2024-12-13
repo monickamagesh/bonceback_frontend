@@ -32,9 +32,8 @@
 }
 
 .sidebar{
-  width: 240px;
-  margin: 16px;
-  padding:16px 32px;
+  width: full;
+  padding:0px 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -47,11 +46,11 @@
 .bblogo{
   width: 180px;
   height: 65px;
-  margin: 16px 8px;
+  margin: auto;
 }
 
 .navbar{
-  width: 220px;
+  width: full;
 }
 
 .primary_btn{
@@ -65,7 +64,6 @@
   font-weight: 600;
   transition: 0.5s;
   border-radius: 16px;
-  margin-bottom: 16px;
   column-gap: 12px;
 }
 
@@ -126,15 +124,15 @@
 .reward{
   width: 200px;
   height: 230px;
-  padding: 10px;
+  padding-top: 10px;
   margin-top: 32px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  background: rgb(243,230,250);
-  background: radial-gradient(circle, rgba(243,230,250,1) 0%, rgba(217,176,241,1) 54%);
-  border-radius: 16px;
+ 
+
+  border-radius: 28px;
 }
 
 .reward_point{

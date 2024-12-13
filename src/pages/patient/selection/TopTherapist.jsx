@@ -1,5 +1,17 @@
 import React from "react";
 import TherapistCard from "../../../components/patient/selection/TherapistCard";
+import g1 from "../../../assets/therapist/g1.jpg"
+import g2 from "../../../assets/therapist/g2.jpg"
+import g3 from "../../../assets/therapist/g3.jpg"
+import g4 from "../../../assets/therapist/g4.png"
+import g5 from "../../../assets/therapist/g5.png"
+import g6 from "../../../assets/therapist/g6.jpeg"
+import b1 from "../../../assets/therapist/b1.jpg"
+import b2 from "../../../assets/therapist/b2.jpg"
+import b3 from "../../../assets/therapist/b3.jpg"
+import b4 from "../../../assets/therapist/b4.png"
+import b5 from "../../../assets/therapist/b5.jpg"
+import b6 from "../../../assets/therapist/b6.jpg"
 
 const TopTherapist = () => {
   const therapists = [
@@ -7,73 +19,73 @@ const TopTherapist = () => {
       name: "Dr. Kat Mach",
       specialization: "Neurological Physical Therapist",
       rating: 4.0,
-      image: "https://via.placeholder.com/248x237",
+      image: g2,
     },
     {
       name: "Dr. Dipu Karunan",
       specialization: "Orthopedic Physical Therapist",
       rating: 4.0,
-      image: "https://via.placeholder.com/248x237",
+      image: b1,
     },
     {
       name: "Dr. Vignesh Prabhas",
       specialization: "Hand & Health Physical Therapist",
       rating: 4.0,
-      image: "https://via.placeholder.com/248x237",
+      image: b2,
     },
     {
       name: "Dr. Diti V Jain",
       specialization: "Sports Physical Therapist",
       rating: 4.0,
-      image: "https://via.placeholder.com/248x237",
+      image: g6,
     },
     {
       name: "Dr. Monicka Magesh",
       specialization: "Pediatric Physical Therapist",
       rating: 4.0,
-      image: "https://via.placeholder.com/248x237",
+      image: g4,
     },
     {
       name: "Dr. Ram Charan",
       specialization: "General Physical Therapist",
       rating: 3.0,
-      image: "https://via.placeholder.com/248x237",
+      image: b3,
     },
     {
       name: "Dr. John Peterson",
       specialization: "Lymphatic Physical Therapist",
       rating: 3.0,
-      image: "https://via.placeholder.com/248x237",
+      image: b4,
     },
     {
       name: "Dr. Sonali Raikar",
       specialization: "Respiratory Physical Therapist",
       rating: 3.0,
-      image: "https://via.placeholder.com/248x237",
+      image: g3,
     },
     {
       name: "Dr. Vizhi Prabha",
       specialization: "Cardiovascular Physical Therapist",
       rating: 3.0,
-      image: "https://via.placeholder.com/248x237",
+      image: g5,
     },
     {
       name: "Dr. Rohit Chawla",
       specialization: "Workplace Physical Therapist",
       rating: 3.0,
-      image: "https://via.placeholder.com/248x237",
+      image: b5,
     },
     {
       name: "Dr. Hira Nandhini",
       specialization: "Women’s Health Physical Therapist",
       rating: 3.0,
-      image: "https://via.placeholder.com/248x237",
+      image: g1,
     },
     {
       name: "Dr. Anurag Krishna",
       specialization: "Geriatric Physical Therapist",
       rating: 3.0,
-      image: "https://via.placeholder.com/248x237",
+      image: b6,
     },
   ];
 
