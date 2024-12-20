@@ -90,7 +90,7 @@ const TopTherapist = () => {
   ];
 
   return (
-    <div className="w-[1080px] mx-auto bg-white border rounded-xl ">
+    <div className="w-[1080px] mx-auto bg-white border rounded-xl my-32">
       <div className="flex w-2/3 mx-auto py-8 justify-between items-center">
         <h1 className="text-4xl font-bold text-gray-900">
           Top Rated Therapists

@@ -24,7 +24,7 @@ const HealthAssessment = () => {
   };
 
   return (
-    <div className="form-container w-[1080px] mx-auto bg-white border rounded-xl">
+    <div className="form-container w-[1080px] mx-auto bg-white border rounded-xl my-32">
       <h1 className="form-title">Health Assessment Form</h1>
       <form onSubmit={handleSubmit}>
 

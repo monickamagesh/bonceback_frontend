@@ -2,6 +2,8 @@ import React from "react";
 import PatientSidebar from "../../components/common/PatientSidebar";
 import TopTherapist from "./selection/TopTherapist";
 import { Navigate, Outlet } from "react-router-dom";
+import SearchBar from "../../components/common/SearchBar";
+import RecommendationBar from "../../components/common/RecommendationBar";
 
 const Patient = () => {
   return (
@@ -11,6 +13,7 @@ const Patient = () => {
       </header>
       <section className="lg:w-1/5 sm:w-2/5 h-screen w-ful mr-16"></section>
       <main className="my-4">
+      <RecommendationBar/>
       <Outlet />
       </main>
     </section>
