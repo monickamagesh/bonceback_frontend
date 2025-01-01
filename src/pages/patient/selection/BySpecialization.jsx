@@ -36,7 +36,10 @@ const BySpec = () => {
     <div className="by-pain-container">
       <div className="by-pain-card">
         <div className="by-pain-header">
-          <h2>By Specialization:</h2>
+          
+          <h1 className="text-3xl font-bold text-gray-900">
+          By Specialization
+        </h1>
           <div className="filter-buttons">
             <button className="filter-btn">Pain</button>
             <button className="filter-btn active">Specialization</button>

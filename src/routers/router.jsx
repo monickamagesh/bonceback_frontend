@@ -3,8 +3,8 @@ import React from "react";
 import App from "../App";
 import Patient from "../pages/patient/Patient";
 import Therapist from "../pages/therapist/Therapist";
-import Login from "../components/patient/auth/Login";
-import Register from "../components/patient/auth/Register";
+import Login from "../components/common/Login";
+import Register from "../components/common/Register";
 import TherapistProfile from "../pages/patient/profile/TherapistProfile";
 import TopTherapist from "../pages/patient/selection/TopTherapist";
 import ByPain from "../pages/patient/selection/ByPain";
@@ -17,21 +17,26 @@ import Notification from "../pages/patient/nav-items/Notification";
 import Chat from "../pages/patient/nav-items/Chat";
 import Progress from "../pages/patient/nav-items/Progress";
 import PatientProfile from "../pages/patient/profile/PatientProfile";
+import SpHealthAssessment from "../pages/patient/form/SpHealthAssessment";
+import PrivateRoute from "./PrivateRoute";
+import Admin from "../pages/admin/Admin";
+import SelectRole from "../components/common/SelectRole";
+import Home from "../pages/landing/Home";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
     children: [
-      { path: "/", element: <Login /> },
-      { path: "/therapist", element: <Therapist /> },
+      { path: "/", element: <Home /> },
+      { path: "/role", element: <SelectRole />},
       { path: "/login", element: <Login /> },
       { path: "/register", element: <Register /> },
       {
         path: "/patient",
         element: (
-          
-            <Patient />
+          <PrivateRoute role="user"><Patient /></PrivateRoute>
+            
           
         ),
         children: [
@@ -55,8 +60,11 @@ const router = createBrowserRouter([
 
            //forms
            { path: "health-assessment", element: <HealthAssessment />},
+           { path: "sphealth-assessment", element: <SpHealthAssessment />},
         ],
       },
+      { path: "/therapist", element: <PrivateRoute role="therapist"><Therapist /></PrivateRoute> },
+      { path: "/admin", element: <PrivateRoute role="admin"><Admin /></PrivateRoute> },
     ],
   },
 ]);

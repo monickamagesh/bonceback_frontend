@@ -13,7 +13,10 @@ const Patient = () => {
       </header>
       <section className="lg:w-1/5 sm:w-2/5 h-screen w-ful mr-16"></section>
       <main className="my-4">
+      
+      <div className="mb-24">
       <RecommendationBar/>
+      </div>
       <Outlet />
       </main>
     </section>

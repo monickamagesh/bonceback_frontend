@@ -10,7 +10,7 @@ const HealthAssessment = () => {
   const [selectedInjuryTime, setSelectedInjuryTime] = useState();
   const [selectedPainActivities, setSelectedPainActivities] = useState([]);
   const [selectedPainDescriptions, setSelectedPainDescriptions] = useState([]);
-  const [painLevel, setPainLevel] = useState(""); 
+  const [painLevel, setPainLevel] = useState("");
   const [selectedSurgeries, setSelectedSurgeries] = useState();
   const [selectedDailyRoutine, setSelectedDailyRoutine] = useState([]);
 
@@ -24,14 +24,13 @@ const HealthAssessment = () => {
   };
 
   return (
-    <div className="form-container w-[1080px] mx-auto bg-white border rounded-xl my-32">
-      <h1 className="form-title">Health Assessment Form</h1>
+    <div className="form-container w-[1080px] mx-auto bg-white border rounded-xl">
+      <h1 className="form-title">General Health Assessment Form</h1>
       <form onSubmit={handleSubmit}>
-
         {/* Question 1 */}
         <div className="form-question">
           <TextInput
-            label="1. What is the primary issue or injury for which you are seeking physiotherapy?"
+            label="1. How often do you experience this pain"
             name="primaryIssue"
             placeholder="Describe your issue"
             value={selectedPrimaryIssue}
@@ -48,7 +47,10 @@ const HealthAssessment = () => {
               { value: "Less than 1 week ago", label: "Less than 1 week ago" },
               { value: "1 - 4 weeks ago", label: "1 - 4 weeks ago" },
               { value: "1 - 3 months ago", label: "1 - 3 months ago" },
-              { value: "More than 3 months ago", label: "More than 3 months ago" },
+              {
+                value: "More than 3 months ago",
+                label: "More than 3 months ago",
+              },
             ]}
             selectedValue={selectedInjuryTime}
             onChange={setSelectedInjuryTime}
@@ -78,11 +80,11 @@ const HealthAssessment = () => {
             label="4. Rate your current pain level:"
             name="painLevel"
             value={painLevel}
-            onChange={handlePainLevelChange} 
+            onChange={handlePainLevelChange}
             options={[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((num) => ({
               value: num,
               label: num,
-            }))} 
+            }))}
           />
         </div>
 
@@ -121,13 +123,12 @@ const HealthAssessment = () => {
             options={[
               { value: "Moderately Active", label: "Moderately Active" },
               { value: "Light Activity", label: "Light Activity" },
-              { value: "Inactive", label: "Inactive" }
+              { value: "Inactive", label: "Inactive" },
             ]}
             selectedValue={selectedDailyRoutine}
             onChange={setSelectedDailyRoutine}
           />
         </div>
-
 
         {/* Submit Button */}
         <div className="submit-button">

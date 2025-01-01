@@ -13,7 +13,10 @@
     justify-content: flex-start;
     align-items: center;
     gap: 32px;
+    width: 1080px;
+    align-items: flex-start;
 }
+
 
 .form-title {
     font-size: 36px;
@@ -22,6 +25,7 @@
     margin-bottom: 10px;
     text-align: center;
 }
+
 
 .form-question {
     color: #484848;

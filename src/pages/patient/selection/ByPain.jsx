@@ -38,7 +38,10 @@ const ByPain = () => {
     <div className="by-pain-container">
        <div className="by-pain-card">
         <div className="by-pain-header">
-          <h2>By Pain:</h2>
+          
+          <h1 className="text-3xl font-bold text-gray-900">
+          By Pain
+        </h1>
           <div className="filter-buttons">
             <button className="filter-btn active">Pain</button>
             <button className="filter-btn">Specialization</button>
