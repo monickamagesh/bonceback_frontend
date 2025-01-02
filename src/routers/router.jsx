@@ -34,7 +34,7 @@ const router = createBrowserRouter([
       {
         path: "/patient",
         element: (
-          <PrivateRoute role="user"><Patient /></PrivateRoute>
+          <Patient />
             
           
         ),
