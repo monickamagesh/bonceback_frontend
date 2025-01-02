@@ -28,14 +28,14 @@ const router = createBrowserRouter([
     path: "/",
     element: <App />,
     children: [
-      { path: "/", element: <Login /> },
+      { path: "/", element: <Patient />},
       { path: "/role", element: <SelectRole />},
       { path: "/login", element: <Login /> },
       { path: "/register", element: <Register /> },
       {
         path: "/patient",
         element: (
-          <PrivateRoute role="user"><Patient /></PrivateRoute>
+          <Patient />
             
           
         ),
