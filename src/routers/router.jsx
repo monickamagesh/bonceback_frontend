@@ -29,19 +29,15 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       { path: "/", element: <Login /> },
-      { path: "/role", element: <SelectRole />},
-      { path: "/register", element: <Register /> },
+      { path: "/role", element: <SelectRole /> },
+      { path: "/register/:role", element: <Register /> },
       {
         path: "/patient",
-        element: (
-          <Patient />
-            
-          
-        ),
+        element: <Patient />,
         children: [
           // patient routes
           //selection
-          { path: "", element: <Onboard /> },
+          { path: "", element: <ByPain /> },
           { path: "pain", element: <ByPain /> },
           { path: "specialization", element: <BySpecialization /> },
           { path: "top-therapist", element: <TopTherapist /> },
@@ -50,20 +46,53 @@ const router = createBrowserRouter([
           { path: "therapist-profile", element: <TherapistProfile /> },
           { path: "patient-profile", element: <PatientProfile /> },
 
-           //Navbar items
-           { path: "progress", element: <Progress /> },
-           { path: "chat", element: <Chat />},
-           { path: "notification", element: <Notification />},
-           { path: "resource-library", element: <ResLibrary /> },
-           { path: "analytic", element: <Analytic /> },
+          //Navbar items
+          { path: "progress", element: <Progress /> },
+          { path: "chat", element: <Chat /> },
+          { path: "notification", element: <Notification /> },
+          { path: "resource-library", element: <ResLibrary /> },
+          { path: "analytic", element: <Analytic /> },
 
-           //forms
-           { path: "health-assessment", element: <HealthAssessment />},
-           { path: "sphealth-assessment", element: <SpHealthAssessment />},
+          //forms
+          { path: "health-assessment", element: <HealthAssessment /> },
+          { path: "sphealth-assessment", element: <SpHealthAssessment /> },
         ],
       },
-      { path: "/therapist", element: <PrivateRoute role="therapist"><Therapist /></PrivateRoute> },
-      { path: "/admin", element: <PrivateRoute role="admin"><Admin /></PrivateRoute> },
+      {
+        path: "/therapist",
+        element: (
+          <PrivateRoute role="therapist">
+            <Therapist />
+          </PrivateRoute>
+        ),
+        children: [
+          //selection
+          { path: "", element: <ByPain /> },
+          { path: "pain", element: <ByPain /> },
+          { path: "specialization", element: <BySpecialization /> },
+          { path: "top-therapist", element: <TopTherapist /> },
+
+          //profile
+          { path: "therapist-profile", element: <TherapistProfile /> },
+          { path: "patient-profile", element: <PatientProfile /> },
+
+          // Therapist routes
+          { path: "patient-analytic", element: <Analytic /> },
+          { path: "patients", element: <div>Patients</div> },
+          { path: "regimens", element: <div>Regiments</div>},
+          { path: "chat", element: <Chat />},
+          { path: "notification", element: <Notification /> },
+          { path: "resource-library", element: <ResLibrary />  },
+        ],
+      },
+      {
+        path: "/admin",
+        element: (
+          <PrivateRoute role="admin">
+            <Admin />
+          </PrivateRoute>
+        ),
+      },
     ],
   },
 ]);
