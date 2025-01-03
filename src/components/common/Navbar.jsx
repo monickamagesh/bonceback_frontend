@@ -7,7 +7,6 @@ const Navbar = () => {
   // Navigation items based on user roles
   const therapistNav = [
     { path: "/therapist/patient-analytic", txt: "Patients Analytic", icon: "analytics" },
-    { path: "/therapist/patients", txt: "Your Patients", icon: "Person" },
     { path: "/therapist/regimens", txt: "Your Regimens", icon: "Edit" },
     { path: "/therapist/chat", txt: "Chat", icon: "chat" },
     { path: "/therapist/notification", txt: "Notification", icon: "notifications" },

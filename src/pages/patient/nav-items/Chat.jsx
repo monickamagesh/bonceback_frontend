@@ -67,18 +67,21 @@ const Chat = () => {
         <div className="chat-messages">
           <div className="message sent">
             <p>
-              Lorem ipsum dolor sit amet. Vel provident praesentium sit totam
-              sequi a voluptate.
+            It sounds like you're carrying a lot on your shoulders right now. Stress can definitely impact your sleep and mental well-being. Would you be interested in exploring some techniques to help you manage these feelings and improve your sleep?
             </p>
             <span className="timestamp">11:11</span>
           </div>
-          <div className="message received">
+          <div className="message received ml-72 mt-10">
             <p>
-              Lorem ipsum dolor sit amet. Vel provident praesentium sit totam
-              sequi a voluptate aliquam a esse accusamus non animi similique in
-              dolorum assumenda eos sint rerum. Aut dolorem dolorum aut
-              possimus.
+            Great! One technique that may help is mindfulness and deep breathing exercises. These can calm the mind and body, especially before bedtime. Would you like to try a short breathing exercise together now?
             </p>
+            <span className="timestamp">11:11</span>
+          </div>
+          <div className="message sent mt-10">
+            <p>
+             If you ever need to talk again, I’m here for you.
+
+</p>
             <span className="timestamp">11:11</span>
           </div>
         </div>

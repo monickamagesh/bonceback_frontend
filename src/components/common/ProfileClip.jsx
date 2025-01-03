@@ -10,11 +10,11 @@ export default function ProfileChip() {
     return <Navigate to="/" replace />;
   }
   return (
-    <NavLink to="/patient/patient-profile">
+    
       <div className="profile_chip">
         <img className="avatar" src={avatar} alt="avatar" />
         <p className="username">@{user.username}</p>
       </div>
-    </NavLink>
+
   );
 }

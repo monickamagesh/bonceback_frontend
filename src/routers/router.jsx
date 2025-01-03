@@ -22,6 +22,7 @@ import PrivateRoute from "./PrivateRoute";
 import Admin from "../pages/admin/Admin";
 import SelectRole from "../components/common/SelectRole";
 import Home from "../pages/landing/Home";
+import Regimens from "../pages/therapist/Regiments";
 
 const router = createBrowserRouter([
   {
@@ -79,7 +80,7 @@ const router = createBrowserRouter([
           // Therapist routes
           { path: "patient-analytic", element: <Analytic /> },
           { path: "patients", element: <div>Patients</div> },
-          { path: "regimens", element: <div>Regiments</div>},
+          { path: "regimens", element: <Regimens />},
           { path: "chat", element: <Chat />},
           { path: "notification", element: <Notification /> },
           { path: "resource-library", element: <ResLibrary />  },
