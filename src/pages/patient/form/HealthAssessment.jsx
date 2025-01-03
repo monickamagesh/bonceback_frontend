@@ -4,8 +4,10 @@ import TextInput from "../../../components/patient/form/TextInput";
 import RadioButton from "../../../components/patient/form/RadioButton";
 import CheckboxButton from "../../../components/patient/form/CheckboxButton";
 import SelectInput from "../../../components/patient/form/SelectInput";
+import { useNavigate } from "react-router-dom";
 
 const HealthAssessment = () => {
+  const navigate = useNavigate();
   const [selectedPrimaryIssue, setSelectedPrimaryIssue] = useState();
   const [selectedInjuryTime, setSelectedInjuryTime] = useState();
   const [selectedPainActivities, setSelectedPainActivities] = useState([]);
@@ -17,6 +19,8 @@ const HealthAssessment = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     alert("Form submitted!");
+    navigate("/patient/");
+    
   };
 
   const handlePainLevelChange = (e) => {

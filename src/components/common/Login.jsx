@@ -30,7 +30,7 @@ const Login = () => {
       dispatch(setUser({ user }));
       alert("Login successful");
       if (user.role === "patient") {
-        navigate("/patient/");
+        navigate("/patient/health-assessment/");
       } else if (user.role === "therapist") {
         navigate("/therapist/");
       } else if (user.role === "admin") {

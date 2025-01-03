@@ -1,22 +1,27 @@
 import React from "react";
 import "./Notification.css";
 import b4 from "../../../assets/therapist/b4.png";
+import b2 from "../../../assets/therapist/b2.jpg";
+import g1 from "../../../assets/therapist/g1.jpg";
 
 const notifications = [
   {
     id: 1,
+    image: b4,
     message: "Welcome, Diti! What services are you interested in?",
     date: "2023-12-17",
     time: "11:11",
   },
   {
     id: 2,
+    image: b2,
     message: "Your request has been sent to Dr. Monicka Magesh.",
     date: "2023-12-18",
     time: "11:12",
   },
   {
     id: 3,
+    image: b2,
     message:
       "Your request has been approved. A schedule will be assigned to you shortly.",
     date: "2023-12-19",
@@ -24,6 +29,7 @@ const notifications = [
   },
   {
     id: 4,
+    image: g1,
     message:
       "Your treatment regimen schedule has been posted by your therapist.",
     date: "2023-12-19",
@@ -85,7 +91,7 @@ const Notification = () => {
                 {items.map((note) => (
                   <div key={note.id} className="notification-item">
                     <img
-                      src={b4}
+                      src={note.image}
                       alt="User Avatar"
                       className="notification-avatar"
                     />
