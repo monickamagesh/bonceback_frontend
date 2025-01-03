@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../../../pages/patient/nav-items/progress.css";
+import "./Progress.css";
 import CheckboxButton from "../../../components/patient/form/CheckboxButton";
 
 const ProgressLogScreen = () => {
